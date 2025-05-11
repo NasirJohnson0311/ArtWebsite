@@ -1,0 +1,17 @@
+.footer {
+    justify-content: space-between;
+    display:inline;
+    margin:20px;
+
+}
+
+.footer-container {
+    background-color:black;
+}
+
+.footer p {
+    color:red;
+}
+
+
+

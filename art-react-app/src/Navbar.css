@@ -1,0 +1,35 @@
+
+
+li {
+    display:inline;
+    margin:10px;
+}
+
+nav {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background:black;
+    padding: 0px 80px; /* Padding from top + padding from sides*/
+    position:sticky;
+    top:0;
+}
+
+a {
+    color:red;
+}
+a:hover {
+    color:white;
+}
+
+.logo {
+    font-size:50px;
+    margin-left: 4%;
+}
+
+
+
+
+.features {
+    font-size: 80px;;
+}
