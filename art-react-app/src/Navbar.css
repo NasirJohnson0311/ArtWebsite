@@ -1,30 +1,49 @@
-
-
-li {
-    display:inline;
-    margin:10px;
+* {
+    box-sizing: -box;
 }
 
-nav {
+body{
+    margin: 0;
+}
+
+.nav {
+    background-color:black;
+    color:red;
     display:flex;
-    align-items:center;
     justify-content: space-between;
-    background:black;
-    padding: 0px 80px; /* Padding from top + padding from sides*/
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
     position:sticky;
     top:0;
-    
 }
 
-a {
-    color:red;
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display:flex;
+    gap:1rem;
 }
-a:hover {
+
+.nav a {
+    color:inherit;
+    text-decoration:none;
+}
+
+
+.site-logo {
+    font-size: 48px;
+}
+
+.menu-tab:hover{
     color:white;
 }
 
-.logo {
-    font-size:50px;
-    margin-left: 4%;
+.cart-tab:hover{
+    color:white;
 }
 
+.account-tab:hover{
+    color:white;
+}

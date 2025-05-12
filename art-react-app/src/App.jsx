@@ -17,16 +17,16 @@ function App () {
   return (
     <>
       <Navbar />
+      
       <div className="container">
         <Routes>
-           
           <Route path="/" element={<Home />} />
           <Route path="/ProductPage" element={<ProductPage />} />
           <Route path="/CartPage" element={<CartPage />} />
           <Route path="/AccountPage" element={<AccountPage />} />
           <Route path="/Menu" element={<Menu />} />
-            
         </Routes>
+
         <Footer />
         </div>
     </>

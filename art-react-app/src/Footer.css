@@ -1,17 +1,33 @@
+* {
+    box-sizing: -box;
+}
+
+body{
+    margin: 0;
+}
+
 .footer {
-    justify-content: space-between;
-    display:inline;
-    margin:20px;
-
+     background:black;
+     color:red;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 2rem;
+     padding: 0 30rem;
+     height:100px;
 }
 
-.footer-container {
-    background-color:black;
+.footer ul {
+    list-style: none;
+    display:flex;
+    gap:1rem;
 }
 
-.footer p {
+.footer li {
     color:red;
 }
 
-
+.footer .instagram-icon:hover {
+    color:white;
+}
 
