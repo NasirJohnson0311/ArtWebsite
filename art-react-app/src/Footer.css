@@ -7,7 +7,7 @@ body{
 }
 
 .footer {
-     background:black;
+     background:#000000;
      color:red;
      display:flex;
      justify-content: space-between;
@@ -31,3 +31,12 @@ body{
     color:white;
 }
 
+.footer svg {
+    fill: red;
+    transition: fill 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover state - white icons */
+.footer a:hover svg {
+    fill: white;
+}
