@@ -6,7 +6,7 @@ import Footer from './Footer';
 function Home () {
     return (
         <>
-        <p className="featured-items">Featured Items</p>
+        <p className="featured-items">Featured Item</p>
         <hr></hr>
         <div className="product-cards">
           <Card />
