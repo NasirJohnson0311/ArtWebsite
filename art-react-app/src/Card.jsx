@@ -1,5 +1,6 @@
 import borgPainting from './assets/Borg.jpeg';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Card () {
 
@@ -8,7 +9,9 @@ function Card () {
     return (
         <div className="card">
 
-            <a href="#"><img className="card-image" src={borgPainting} alt="Borg painting" ></img></a>
+            <Link to="/ProductPage">
+                <img className="card-image" src={borgPainting} alt="Borg painting" ></img>
+            </Link>
             <h2 className="card-title">Cyber Jordan </h2>
             <p className="card-text">$40.00USD</p>
             
