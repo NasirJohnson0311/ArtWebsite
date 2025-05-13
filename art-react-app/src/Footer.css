@@ -1,20 +1,21 @@
 * {
-    box-sizing: -box;
+    box-sizing: border-box !important;
 }
 
-body{
-    margin: 0;
+body {
+    margin: 0 !important;
 }
 
 .footer {
-     background:#000000;
-     color:red;
-     display:flex;
-     justify-content: space-between;
-     align-items: center;
-     gap: 2rem;
-     padding: 0 30rem;
-     height:100px;
+     background: #000000 !important;
+     color: red !important;
+     display: flex !important;
+     justify-content: space-between !important;
+     align-items: center !important;
+     gap: 2rem !important;
+     padding: 0 30rem !important;
+     height: 200px !important;
+     width: 100% !important;
 }
 
 .footer ul {

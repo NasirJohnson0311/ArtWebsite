@@ -1,22 +1,22 @@
 * {
-    box-sizing: -box;
+    box-sizing: border-box !important;
 }
 
-body{
-    margin: 0;
+body {
+    margin: 0 !important;
 }
 
 .nav {
-    background-color:black;
-    color:red;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 2rem;
-    position:sticky;
-    top:0;
-    
+    background-color: black !important;
+    color: red !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 2rem !important;
+    padding: 0 2rem !important;
+    position: sticky !important;
+    top: 0 !important;
+    width: 100% !important;
 }
 
 .nav ul {

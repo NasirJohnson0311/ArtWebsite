@@ -10,15 +10,15 @@ import CartPage from './CartPage.jsx';
 import AccountPage from './AccountPage.jsx';
 import Home from './Home.jsx';
 import Menu from './Menu.jsx';
-import {Route, Routes,  } from 'react-router-dom';
-
+import {Route, Routes} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Make sure Bootstrap is imported
 
 function App () {
   return (
     <>
       <Navbar />
       
-      <div className="container">
+      <div className="container-fluid px-0"> {/* Changed to container-fluid and removed padding */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/ProductPage" element={<ProductPage />} />
@@ -26,12 +26,11 @@ function App () {
           <Route path="/AccountPage" element={<AccountPage />} />
           <Route path="/Menu" element={<Menu />} />
         </Routes>
-
-        <Footer />
-        </div>
+      </div>
+      
+      <Footer />
     </>
   );
 }
 
-
-export default App
+export default App;
