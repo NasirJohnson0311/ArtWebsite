@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import './App.css';
 import './Navbar.css';
@@ -12,6 +13,7 @@ import Home from './Home.jsx';
 import Menu from './Menu.jsx';
 import {Route, Routes} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Make sure Bootstrap is imported
+import storeItems from "../Data/items.json";
 
 function App () {
   return (

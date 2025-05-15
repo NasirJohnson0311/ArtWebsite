@@ -1,5 +1,5 @@
 import React from 'react';
-import borgPainting from './assets/Borg.jpeg';
+import borgPainting from '/Users/nasirjohnson/ArtWebsite/art-react-app/PublicImgs/Borg.jpeg';
 import './ProductPage.css';
 import { Link } from 'react-router-dom';
 
