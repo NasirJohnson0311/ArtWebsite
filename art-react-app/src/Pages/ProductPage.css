@@ -1,0 +1,59 @@
+* {
+    box-sizing: -box;
+}
+
+body{
+    margin: 0;
+}
+
+.page .card-image {
+    max-width: 40%;
+    border: solid 2px;
+    border-color:white;
+}
+
+.product-list {
+    display:flex;
+    list-style:none;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.product-list ul {
+    display:flex;
+    list-style: none;
+}
+
+
+.page .description {
+    border-radius:10px;
+    text-align:left;
+}
+
+.page .description h2 {
+    font-size:48px;
+}
+
+.related-list {
+    display:flex;
+    list-style:none;
+    align-items: center;
+    gap: 0rem;
+}
+
+.related-items {
+    padding-left:40px;
+}
+
+.page .back-arrow {
+   
+}
+
+.page .back-arrow svg {
+    color:red;
+}
+
+.page .back-arrow svg:hover {
+    color:white;
+}
