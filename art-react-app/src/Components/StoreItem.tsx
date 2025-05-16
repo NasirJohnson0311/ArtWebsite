@@ -56,16 +56,31 @@ export function StoreItem({ id, name, price, imgUrl}:
                                 className="d-flex align-items-center justify-content-center"
                                 style={{ gap: ".5rem"}}
                             >
-                                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                                <Button size="lg" style={{
+                                    background:"white", 
+                                    color:"black", 
+                                    border:"solid .5px"}} 
+                                    onClick={() => decreaseCartQuantity(id)}>-</Button>
                                 <div>
-                                    <span className="fs-3">{quantity}</span> in cart
+                                    <span className="fs-5">{quantity}</span> in cart
                                 </div>
-                                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                                <Button size="lg" style={{
+                                    background:"white",
+                                    color:"black",
+                                    border:"solid 1px"
+                                }}
+                                onClick={() => increaseCartQuantity(id)}>+</Button>
                             </div>
-                            <Button 
+                            <Button className="w-100"
+                                style={{
+                                    background:"white",
+                                    color:"black",
+                                    border:"solid 1px black"
+                                }}
                                 onClick={() => removeFromCart(id)}
                                 variant="danger"
                                 size="sm"
+                    
                                 >
                                     Remove
                                 </Button>
