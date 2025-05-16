@@ -2,6 +2,7 @@ import React from 'react';
 import "./Navbar.css";
 import { NavLink, Link } from 'react-router-dom';
 import { Button, Container, Nav, Navbar as NavbarBs} from 'react-bootstrap'
+import { useShoppingCart } from '../Context/ShoppingCartContext';
 
 
 /*
@@ -22,8 +23,9 @@ Shopping cart
 */
 
 function Navbar () {
+    const { openCart, cartQuantity } = useShoppingCart()
     return (
-    <NavbarBs className="bg-black shadow-sm mb-3">
+    <NavbarBs sticky="top" className="bg-black shadow-sm mb-3">
         <Container fluid>
             <Nav className="me-auto">
                 <Nav.Link to="/Menu"  as={NavLink} className="menu-tab" title="Menu">
@@ -41,6 +43,7 @@ function Navbar () {
     
             <Nav className="ms-auto">
                 <Button 
+                onClick={openCart}
                 style={{position: "relative"}}
                 variant='outline-none'
                 title="Cart"
@@ -60,7 +63,7 @@ function Navbar () {
                             transform:"translate(25%, 25%)",
                             }}
                             >
-                                3
+                                {cartQuantity}
                             </div>
                 </Button>
                 
