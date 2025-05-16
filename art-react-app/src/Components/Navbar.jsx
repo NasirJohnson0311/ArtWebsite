@@ -33,7 +33,7 @@ function Navbar () {
                 </Nav.Link>
             </Nav>
 
-            <NavbarBs.Brand sticky="top" className="mx-auto site-logo" title="Home">
+            <NavbarBs.Brand sticky="top" className="mx-auto site-logo" title="Home" style={{color:"white"}}>
                 <Nav.Link to="/" as={NavLink} className="site-logo">
                     Gallery
                 </Nav.Link>

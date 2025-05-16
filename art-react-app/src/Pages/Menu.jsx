@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './Navbar';
-import './Navbar.css';
-import Card from './Card.jsx';
+import Navbar from '../Components/Navbar';
+
+
 
 function Menu () {
     return (

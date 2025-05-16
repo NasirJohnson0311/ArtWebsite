@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import './App.css';
-import './Navbar.css';
-import Card from './Card.jsx';
-import Navbar from './Navbar.jsx';
+
+
+import Navbar from '../Components/Navbar.jsx';
 import Footer from './Footer.jsx';
 import ProductPage from './ProductPage.jsx';
 import CartPage from './CartPage.jsx';

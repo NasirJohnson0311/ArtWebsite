@@ -3,18 +3,36 @@
         "id": 1,
         "name": "Cyber Jordan",
         "price": 40.00,
-        "imgUrl": "/Users/nasirjohnson/ArtWebsite/art-react-app/PublicImgs/Borg.jpeg"
+        "imgUrl": "/PublicImgs/Borg.jpeg?t=1747351798746"
     },
     {
         "id": 2,
         "name": "Cyber Jordan",
         "price": 40.00,
-        "imgUrl": "/Users/nasirjohnson/ArtWebsite/art-react-app/PublicImgs/Borg.jpeg"
+        "imgUrl": "/PublicImgs/Borg.jpeg?t=1747351798746"
     },
     {
         "id": 3,
         "name": "Cyber Jordan",
         "price": 40.00,
-        "imgUrl": "/Users/nasirjohnson/ArtWebsite/art-react-app/PublicImgs/Borg.jpeg"
+        "imgUrl": "/PublicImgs/Borg.jpeg?t=1747351798746"
+    },
+    {
+        "id": 4,
+        "name": "Cyber Jordan",
+        "price": 40.00,
+        "imgUrl": "/PublicImgs/Borg.jpeg?t=1747351798746"
+    },
+    {
+        "id": 5,
+        "name": "Cyber Jordan",
+        "price": 40.00,
+        "imgUrl": "/PublicImgs/Borg.jpeg?t=1747351798746"
+    },
+    {
+        "id": 6,
+        "name": "Cyber Jordan",
+        "price": 40.00,
+        "imgUrl": "/PublicImgs/Borg.jpeg?t=1747351798746"
     }
 ]  
