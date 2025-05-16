@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function ProductPage () {
     return (
-        <body className="page">
+        <div className="page">
 
             <div className="back-arrow">
                 <Link to="/">
@@ -46,7 +46,7 @@ function ProductPage () {
                 </li>
 
             </ul>
-        </body>
+        </div>
     );
 }
 
