@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
-import ReactDOM from 'react-dom';
 import './App.css';
-
-
 import Navbar from '../Components/Navbar.jsx';
 import Footer from './Footer.jsx';
 import ProductPage from './ProductPage.jsx';
@@ -13,11 +9,12 @@ import Home from './Home.jsx';
 import Menu from './Menu.jsx';
 import {Route, Routes} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Make sure Bootstrap is imported
-import storeItems from "../Data/items.json";
+import { ShoppingCartProivder } from '../Context/ShoppingCartContext';
 
 function App () {
   return (
     <>
+    <ShoppingCartProivder>
       <Navbar />
       
       <div className="container-fluid px-0"> {/* Changed to container-fluid and removed padding */}
@@ -31,6 +28,7 @@ function App () {
       </div>
       
       <Footer />
+      </ShoppingCartProivder>
     </>
   );
 }
