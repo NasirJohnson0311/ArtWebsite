@@ -21,17 +21,18 @@ export function CartItem({ id, quantity }: CartItemProps) {
                 width: "125px",
                 height: "75px",
                 objectFit: "cover"
-            }}
-            />
+            }}/>
+
             <div className="me-auto">
                 <div>
                     {item.name} 
                     {quantity > 1 && (
                         <span className="text-muted" style={{fontSize: ".65rem"}}>
                             {quantity}x
-                            </span>
+                        </span>
                     )}
                 </div>
+                
                 <div className="text-muted" style={{ fontSize: ".75rem"}}
                 > {FormatCurrency(item.price)}</div>
             </div>
@@ -40,6 +41,6 @@ export function CartItem({ id, quantity }: CartItemProps) {
             </div>
             <Button variant="outline-danger" size="sm" onClick={() =>
                  removeFromCart(item.id)}>&times;</Button>
-                </Stack>
+            </Stack>
     )
 }

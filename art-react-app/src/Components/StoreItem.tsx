@@ -4,6 +4,7 @@ import { FormatCurrency } from '../Utilities/FormatCurrency'
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useShoppingCart } from '../Context/ShoppingCartContext'
+import "./StoreItem.css"
 
 
 type StoreItemProps = {
@@ -24,24 +25,29 @@ export function StoreItem({ id, name, price, imgUrl}:
 
         const quantity = getItemQuantity(id)
 
-        return <Card className="w-auto h-auto">
-            <Link to="/ProductPage" >
-                <Card.Img 
-                    variant="top"
-                    src={imgUrl}
-                    height="auto" 
-                    style={{ objectFit: "cover", width: "25rem"}} //
-                    alt="Borg"
-                    />  
+        return <Card className="store-item-card h-100 w-100">
+            <Link to="/ProductPage">
+                <div className="image-container">
+                    <Card.Img
+                        variant="top"
+                        src={imgUrl}
+                        style={{ objectFit: "cover", width: "100%", height: "400px" }}
+                        alt="Product"
+                    />
+                <div className="img-overlay"></div>
+            </div>
             </Link>
 
-            <Card.Body className="d-flex flex-column" style={{ width: "25rem"}}> 
-                <Card.Title className="d-flex
-                justify-content-space-between align-items-baseline
-                mb-4">
-                    <span className="fs-2 text-muted">{name}</span>
-                    <span className="ms-2 text-muted">{ FormatCurrency(price)} </span>
-                </Card.Title>
+
+            <Card.Body 
+                className="d-flex flex-column"
+                style={{ width: "100%" }}> 
+
+            <Card.Title className="text-left mb-5">
+                <div className="fs-4 fw-bold text-dark">{name}</div>
+                <div className="text-muted">{FormatCurrency(price)}</div>
+            </Card.Title>
+
                 <div className="mt-auto">
                     {quantity == 0 ? (
                         <Button className="w-100" onClick={() => increaseCartQuantity(id)} style={{background:"gray"}}>

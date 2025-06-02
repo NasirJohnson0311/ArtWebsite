@@ -67,3 +67,8 @@ hr {
 .product-cards {
   margin-left:4%;
 }
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
