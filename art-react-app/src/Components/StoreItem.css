@@ -1,0 +1,35 @@
+.store-item-card {
+    transition: transform .4s ease, box-shadow .4s ease;
+  }
+  
+  .store-item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .img-overlay {
+    opacity: 0.3; /* Adjust for stronger or softer overlay */
+  }
+  
