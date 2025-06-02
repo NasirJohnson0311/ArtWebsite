@@ -10,13 +10,14 @@ import Menu from './Menu.jsx';
 import {Route, Routes} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Make sure Bootstrap is imported
 import { ShoppingCartProivder } from '../Context/ShoppingCartContext';
+import { MenuProvider } from '../Context/MenuContext'
 
 function App () {
   return (
     <>
+    <MenuProvider>
     <ShoppingCartProivder>
       <Navbar />
-      
       <div className="container-fluid px-0"> {/* Changed to container-fluid and removed padding */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,9 +27,9 @@ function App () {
           <Route path="/Menu" element={<Menu />} />
         </Routes>
       </div>
-      
       <Footer />
       </ShoppingCartProivder>
+      </MenuProvider>
     </>
   );
 }

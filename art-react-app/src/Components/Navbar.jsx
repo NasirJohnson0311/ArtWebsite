@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { NavLink, Link } from 'react-router-dom';
 import { Button, Container, Nav, Navbar as NavbarBs} from 'react-bootstrap'
 import { useShoppingCart } from '../Context/ShoppingCartContext';
+import { useMenu } from '../Context/MenuContext'
 
 
 /*
@@ -24,15 +25,20 @@ Shopping cart
 
 function Navbar () {
     const { openCart, cartQuantity } = useShoppingCart()
+    const { openMenu } = useMenu()
+
     return (
     <NavbarBs sticky="top" className="bg-black shadow-sm mb-3">
         <Container fluid>
             <Nav className="me-auto">
-                <Nav.Link to="/Menu"  as={NavLink} className="menu-tab" title="Menu">
+
+                <Nav.Link onClick={openMenu} className="menu-tab" title="Menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                     </svg>
                 </Nav.Link>
+
+            
             </Nav>
 
             <NavbarBs.Brand sticky="top" className="mx-auto site-logo" title="Home" style={{color:"white"}}>
