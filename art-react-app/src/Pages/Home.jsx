@@ -5,12 +5,14 @@ import { Row, Col } from 'react-bootstrap';
 import storeItems from "/Users/nasirjohnson/ArtWebsite/art-react-app/src/Data/items.json";
 import { StoreItem } from '../Components/StoreItem';
 import Container from 'react-bootstrap/Container';
+import './Home.css';
 
 function Home () {
   return (
     <>
+      <div className="page">
       <p className="featured-items">Featured Items</p>
-      <hr />
+
       <div className="product-cards">
         <Container fluid>
 
@@ -23,6 +25,7 @@ function Home () {
           ))}
         </Row>
         </Container>
+      </div>
       </div>
     </>
   );
