@@ -1,4 +1,13 @@
 .bg-black svg {
-    color:white;
+    color:red;
 }
 
+.navbar {
+    min-height: 80px; /* adjust to your desired height */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  

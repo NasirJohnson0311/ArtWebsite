@@ -41,7 +41,7 @@ export function StoreItem({ id, name, price, imgUrl}:
 
             <Card.Body 
                 className="d-flex flex-column"
-                style={{ width: "100%" }}> 
+                style={{ width: "100%"}}> 
 
             <Card.Title className="text-left mb-5">
                 <div className="fs-4 fw-bold text-dark">{name}</div>
@@ -62,21 +62,27 @@ export function StoreItem({ id, name, price, imgUrl}:
                                 className="d-flex align-items-center justify-content-center"
                                 style={{ gap: ".5rem"}}
                             >
-                                <Button size="lg" style={{
+                                {/* Decrease cart button */}
+                                <Button size="sm" style={{
                                     background:"white", 
                                     color:"black", 
-                                    border:"solid .5px"}} 
+                                    border:"solid white .5px"}} 
                                     onClick={() => decreaseCartQuantity(id)}>-</Button>
+
+                                {/* Amount in cart */}
                                 <div>
-                                    <span className="fs-5">{quantity}</span> in cart
+                                    <span className="fs-9">{quantity}</span> in cart
                                 </div>
-                                <Button size="lg" style={{
+
+                                {/* Increase cart button */}
+                                <Button size="sm" style={{
                                     background:"white",
                                     color:"black",
-                                    border:"solid 1px"
+                                    border:"solid white 1px"
                                 }}
                                 onClick={() => increaseCartQuantity(id)}>+</Button>
                             </div>
+                            
                             <Button className="w-100"
                                 style={{
                                     background:"white",

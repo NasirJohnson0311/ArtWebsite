@@ -28,7 +28,7 @@ function Navbar () {
     const { openMenu } = useMenu()
 
     return (
-    <NavbarBs sticky="top" className="bg-black shadow-sm mb-3">
+    <NavbarBs sticky="top" className="bg-black shadow-sm "> 
         <Container fluid>
             <Nav className="me-auto">
 
@@ -42,7 +42,7 @@ function Navbar () {
             </Nav>
 
             <NavbarBs.Brand sticky="top" className="mx-auto site-logo" title="Home" style={{color:"white"}}>
-                <Nav.Link to="/" as={NavLink} className="site-logo">
+                <Nav.Link to="/" as={NavLink} className="site-logo" style={{color:"red"}}>
                     Gallery
                 </Nav.Link>
             </NavbarBs.Brand>

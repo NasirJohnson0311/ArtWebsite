@@ -1,3 +1,6 @@
+
+
+
 .card {
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 10px;
@@ -27,7 +30,6 @@
 
 .card .card-title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
   margin: 0.5rem 0 0.25rem 0;
   padding: 0 1rem;
   color: #222;
@@ -39,7 +41,7 @@
   font-size: 0.9rem;
   text-align: left;
   padding: 0 1rem 0.5rem 1rem;
-  color: #555;
+  color: black;
 }
 
 .card .add-to-cart {
@@ -51,21 +53,22 @@
 
 .product-cards {
   margin: 0 auto;
-  padding: 2rem;
-  max-width: 1200px;
+  padding-bottom: 8rem;
+  max-width: 1500px;
 }
 
 .featured-items {
   margin-left: 5%;
   font-size: 1.5rem;
-  font-weight: bold;
   margin-top: 2rem;
+  color:rgb(0, 0, 0);
 }
 
 hr {
   width: 15%;
   margin-left: 5%;
   margin-bottom: 2rem;
+  color:rgb(0, 0, 0);
 }
 
 .store-item-card {
@@ -79,8 +82,4 @@ hr {
 .store-item-card:hover {
   transform: scale(1.02);
   opacity: 0.98;
-}
-
-.product-cards .row > .col {
-  display: flex;
 }

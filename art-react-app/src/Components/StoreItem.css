@@ -1,10 +1,11 @@
 .store-item-card {
     transition: transform .4s ease, box-shadow .4s ease;
+    width: 200px;
   }
   
   .store-item-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
   }
   
   .image-container {
