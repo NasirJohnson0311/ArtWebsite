@@ -28,10 +28,13 @@ function Navbar () {
     const { openMenu } = useMenu()
 
     return (
-    <NavbarBs sticky="top" className="bg-black shadow-sm "> 
+
+    /* Entire Navbar */
+    <NavbarBs sticky="top" className="bg-black shadow-lg "> 
         <Container fluid>
             <Nav className="me-auto">
 
+                {/* Menu link */}
                 <Nav.Link onClick={openMenu} className="menu-tab" title="Menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -41,8 +44,9 @@ function Navbar () {
             
             </Nav>
 
+            {/* Page logo */}
             <NavbarBs.Brand sticky="top" className="mx-auto site-logo" title="Home" style={{color:"white"}}>
-                <Nav.Link to="/" as={NavLink} className="site-logo" style={{color:"red"}}>
+                <Nav.Link to="/" as={NavLink} className="site-logo" style={{color:"red", fontSize: "3rem"}}>
                     Gallery
                 </Nav.Link>
             </NavbarBs.Brand>
