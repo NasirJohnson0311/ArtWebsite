@@ -50,7 +50,7 @@ export function StoreItem({ id, name, price, imgUrl}:
 
                 <div className="mt-auto">
                     {quantity == 0 ? (
-                        <Button className="w-100" onClick={() => increaseCartQuantity(id)} style={{background:"gray"}}>
+                        <Button className="w-100" onClick={() => increaseCartQuantity(id)} style={{background:"black", border:"solid black .5px"}}>
                              Add To Cart
                         </Button>
                     ) : (
@@ -83,6 +83,7 @@ export function StoreItem({ id, name, price, imgUrl}:
                                 onClick={() => increaseCartQuantity(id)}>+</Button>
                             </div>
                             
+                            {/*Remove from cart*/}
                             <Button className="w-100"
                                 style={{
                                     background:"white",
