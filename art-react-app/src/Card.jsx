@@ -1,6 +1,7 @@
 import borgPainting from './assets/Borg.jpeg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import skyfall from './assets/Skyfall.jpg';
 
 function Card () {
 
