@@ -9,7 +9,7 @@ nav {
     display:flex;
     align-items:center;
     justify-content: space-between;
-    background:black;
+    background:transparent;
     padding: 0px 80px; /* Padding from top + padding from sides*/
     position:sticky;
     top:0;

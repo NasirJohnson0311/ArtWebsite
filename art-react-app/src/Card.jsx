@@ -11,7 +11,7 @@ function Card () {
         <div className="card">
 
             <Link to="/ProductPage">
-                <img className="card-image" src={borgPainting} alt="Borg painting" ></img>
+                <img className="card-image" src={skyfall} alt="Borg painting" ></img>
             </Link>
             <h2 className="card-title">Cyber Jordan </h2>
             <p className="card-text">$40.00USD</p>
