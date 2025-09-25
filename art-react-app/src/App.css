@@ -12,6 +12,11 @@
 
 }
 
+.card-image:hover {
+  transform: scale(1.05);
+  filter: contrast(1.2) saturate(1.2) brightness(1.05);
+}
+
 .card .card-image {
   max-width: 100%;
   height: auto;
