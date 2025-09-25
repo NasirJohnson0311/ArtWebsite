@@ -6,11 +6,11 @@ import Navbar from './Navbar';
 function ProductPage () {
     return (
         <>
+
         <ZoomedParticleAnimation />
         <h1>
             Product
         </h1>
-        
         <p> Product</p>
         </>
     );
