@@ -391,6 +391,10 @@
     letter-spacing: 0.5px;
 }
 
+.buy-now-btn a {
+    color:white
+}
+
 .add-to-cart-btn {
     background: rgba(255, 255, 255, 0.02);
     color: #ffffff;
