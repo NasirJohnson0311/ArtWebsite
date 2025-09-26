@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ZoomedParticleAnimation from './ZoomedParticleAnimation';
 import skyfall from './assets/Skyfall.jpg';
+import borg from './assets/Borg.jpeg';
 import Navbar from './Navbar';
 import './ProductPage.css';
 import { Link } from 'react-router-dom';
@@ -49,7 +50,7 @@ function ProductPage() {
                     <div className="product-container">
                         <div className="product-image-section">
                             <div className="image-wrapper">
-                                <img className="product-image" src={skyfall} alt="Skyfall" />
+                                <img className="product-image" src={borg} alt="Skyfall" />
                                 <div className="image-overlay"></div>
                             </div>
                         </div>

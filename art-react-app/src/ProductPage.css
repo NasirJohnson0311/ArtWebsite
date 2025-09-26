@@ -399,15 +399,15 @@
 }
 
 .add-to-cart-btn:hover {
-    background: rgba(255, 0, 0, 0.1);
-    border-color: rgba(255, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 0, 0, 0.2);
 }
 
 .buy-now-btn {
     background: linear-gradient(135deg, #ff0000, #cc0000);
-    color: #ffffff;
+    color: #080808;
     position: relative;
     overflow: hidden;
 }
