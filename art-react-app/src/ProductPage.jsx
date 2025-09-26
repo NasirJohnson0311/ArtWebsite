@@ -112,7 +112,7 @@ function ProductPage() {
                                         <div className="btn-glow"></div>
                                     </button>
                                         <button className="buy-now-btn">
-                                            <Link to="./CheckoutPage">
+                                            <Link to="/CheckoutPage">
                                                 <span>Buy with ShopPay</span>
                                                 <div className="btn-shine"></div>
                                             </Link>
