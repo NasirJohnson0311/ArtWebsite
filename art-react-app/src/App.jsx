@@ -10,6 +10,7 @@ import CartPage from './CartPage.jsx';
 import AccountPage from './AccountPage.jsx';
 import Home from './Home.jsx';
 import Menu from './Menu.jsx';
+import CheckoutPage from './CheckoutPage.jsx';
 import {Route, Routes,  } from 'react-router-dom';
 
 
@@ -25,6 +26,7 @@ function App () {
           <Route path="/CartPage" element={<CartPage />} />
           <Route path="/AccountPage" element={<AccountPage />} />
           <Route path="/Menu" element={<Menu />} />
+          <Route path="/CheckoutPage" element={<CheckoutPage />} />
             
         </Routes>
         <Footer />
