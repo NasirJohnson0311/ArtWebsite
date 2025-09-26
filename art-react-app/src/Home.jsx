@@ -8,6 +8,13 @@ function Home () {
     return (
         <>
         <ZoomedParticleAnimation />
+        
+        <div className="background-effects">
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+        </div>
+
         <div style={{ position: 'relative', zIndex: 1}}>
         <br></br>
         <p className="featured-items">Featured Items</p>
