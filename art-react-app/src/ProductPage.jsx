@@ -59,10 +59,9 @@ function ProductPage() {
                             <div className="product-card">
                                 <div className="product-header">
                                     <h1 className="product-title">
-                                        <span className="title-main">Sky</span>
-                                        <span className="title-accent">fall</span>
+                                        <span className="title-main">Cyber</span>
+                                        <span className="title-accent">Jordan</span>
                                     </h1>
-                                    <div className="product-badge">LIMITED EDITION</div>
                                 </div>
                                 
                                 <div className="product-price">
@@ -74,13 +73,7 @@ function ProductPage() {
                                 </div>
 
                                 <div className="payment-info">
-                                    <div className="payment-option">
-                                        <div className="payment-icon">💳</div>
-                                        <div className="payment-text">
-                                            <p>Pay in 4 interest-free installments of <strong>$25.00</strong></p>
-                                            <p>with <span className="shop-pay">Shop Pay</span> <a href="#" className="learn-more">Learn more</a></p>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
 
                                 <div className="quantity-section">
@@ -127,15 +120,15 @@ function ProductPage() {
 
                                 <div className="product-features">
                                     <div className="feature-item">
-                                        <div className="feature-icon">🎨</div>
+                                        <div className="feature-icon"></div>
                                         <span>8.25 art decks</span>
                                     </div>
                                     <div className="feature-item">
-                                        <div className="feature-icon">📦</div>
+                                        <div className="feature-icon"></div>
                                         <span>No hanging equipment included</span>
                                     </div>
                                     <div className="feature-item shipping-notice">
-                                        <div className="feature-icon">⚡</div>
+                                        <div className="feature-icon"></div>
                                         <span>7-10 Business Days Processing</span>
                                     </div>
                                 </div>
@@ -146,7 +139,7 @@ function ProductPage() {
                     {/* Related Items Section */}
                     <div className="related-section">
                         <div className="section-header">
-                            <h2 className="related-title">Related <span className="accent">Items</span></h2>
+                            <h2 className="related-title">Related Items</h2>
                             <div className="section-line"></div>
                         </div>
                         

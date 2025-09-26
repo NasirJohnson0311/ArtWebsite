@@ -258,7 +258,7 @@
 }
 
 .currency {
-    color: #666666;
+    color: #f7f3f3;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -291,7 +291,7 @@
 }
 
 .shop-pay {
-    color: #ff0000;
+    color: #757575;
     font-weight: 600;
 }
 
@@ -399,22 +399,22 @@
 }
 
 .add-to-cart-btn:hover {
-    background: rgba(0, 0, 0, 0.1);
-    border-color: rgba(255, 255, 255, 0);
+    background: transparent;
+    border-color: rgba(255, 255, 255, .1);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.0);
 }
 
 .buy-now-btn {
-    background: linear-gradient(135deg, #ff0000, #cc0000);
-    color: #080808;
+    background: rgba(179, 177, 177, 0.15);
+    color: white;
     position: relative;
     overflow: hidden;
 }
 
 .buy-now-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
 
 .btn-shine {
@@ -446,7 +446,7 @@
 
 .more-payment-btn:hover {
     color: #ffffff;
-    text-decoration-color: rgba(255, 0, 0, 0.5);
+    text-decoration-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Product Features */
@@ -470,7 +470,7 @@
 }
 
 .shipping-notice {
-    color: #ff4500 !important;
+    color: #cccccc !important;
     font-weight: 500;
 }
 
