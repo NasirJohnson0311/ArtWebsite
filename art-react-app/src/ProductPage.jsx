@@ -148,7 +148,7 @@ function ProductPage() {
                                 <div className="related-card">
                                     <img className="related-image" src={skyfall} alt="Related item 1" />
                                     <div className="related-overlay">
-                                        <button className="quick-view">Quick View</button>
+                                        <button className="quick-view">View</button>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@ function ProductPage() {
                                 <div className="related-card">
                                     <img className="related-image" src={skyfall} alt="Related item 2" />
                                     <div className="related-overlay">
-                                        <button className="quick-view">Quick View</button>
+                                        <button className="quick-view">View</button>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@ function ProductPage() {
                                 <div className="related-card">
                                     <img className="related-image" src={skyfall} alt="Related item 3" />
                                     <div className="related-overlay">
-                                        <button className="quick-view">Quick View</button>
+                                        <button className="quick-view">View</button>
                                     </div>
                                 </div>
                             </div>
