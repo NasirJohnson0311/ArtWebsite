@@ -1,0 +1,341 @@
+.checkout-details-section {
+    float: right;
+}
+
+/* Back Arrow Styling */
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-3px);
+}
+
+.back-text {
+    font-weight: 500;
+}
+
+/* Product Card Styling */
+.product-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px;
+    max-width: 500px;
+    color: #fff;
+}
+
+/* Header Styling */
+.checkout-header {
+    margin-bottom: 25px;
+}
+
+.checkout-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.checkout-main {
+
+}
+
+
+/* Price Styling */
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-label {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+.currency {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Payment Form Styling */
+.payment-info {
+    margin-bottom: 25px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group.half-width {
+    flex: 0 0 calc(50% - 7.5px);
+}
+
+.form-group.third-width {
+    flex: 0 0 calc(33.333% - 10px);
+}
+
+.form-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #e2e2e20b 0%, #d8d8d805 100%);
+    border-radius: 12px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.form-input.buy-now-style {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input.buy-now-style::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-input.buy-now-style:focus {
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
+}
+
+.input-shine {
+
+}
+
+.form-input-wrapper:hover .input-shine {
+    animation: shine 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+/* Action Buttons Styling */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.add-to-cart-btn {
+    position: relative;
+    background: linear-gradient(135deg, #00d5ff00 0%, #0099cc00 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.add-to-cart-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover .btn-glow {
+    width: 100px;
+    height: 100px;
+}
+
+.buy-now-btn {
+    position: relative;
+    background: linear-gradient(135deg, #667eea00 0%, #764ba200 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.buy-now-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.buy-now-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-shine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.buy-now-btn:hover .btn-shine {
+    animation: shine 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.more-payment-btn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 15px 25px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-payment-btn:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Product Features Styling */
+.product-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.feature-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.shipping-notice {
+    font-weight: 500;
+}
+
+.shipping-notice .feature-icon {
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .checkout-title {
+        font-size: 2rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-group.half-width,
+    .form-group.third-width {
+        flex: 1;
+    }
+}

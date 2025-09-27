@@ -2,17 +2,17 @@
     justify-content: space-between;
     display:inline;
     margin:20px;
-    padding-top: 300px;
+
 
 }
 
 .footer-container {
     background-color:transparent;
-
+    margin-top: 150px;
 }
 
 .footer p {
-    color:red;
+    color:rgb(246, 245, 245);
 }
 
 

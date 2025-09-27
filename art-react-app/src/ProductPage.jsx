@@ -109,12 +109,10 @@ function ProductPage() {
                                 <div className="action-buttons">
                                     <button className="add-to-cart-btn">
                                         <span>Add to cart</span>
-                                        <div className="btn-glow"></div>
                                     </button>
                                         <button className="buy-now-btn">
                                             <Link to="/CheckoutPage">
                                                 <span>Buy with ShopPay</span>
-                                                <div className="btn-shine"></div>
                                             </Link>
                                         </button>
                                     <button className="more-payment-btn">More payment options</button>

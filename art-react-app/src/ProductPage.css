@@ -398,15 +398,7 @@
 .add-to-cart-btn {
     background: rgba(255, 255, 255, 0.02);
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
-}
-
-.add-to-cart-btn:hover {
-    background: transparent;
-    border-color: rgba(255, 255, 255, .1);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.0);
 }
 
 .buy-now-btn {
@@ -416,35 +408,17 @@
     overflow: hidden;
 }
 
-.buy-now-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
-}
-
-.btn-shine {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.6s ease;
-}
-
-.buy-now-btn:hover .btn-shine {
-    left: 100%;
-}
 
 .more-payment-btn {
     background: none;
-    color: #999999;
+
     border: none;
     padding: 12px 0;
     font-size: 0.9rem;
     cursor: pointer;
     transition: color 0.3s ease;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+
+
     text-decoration-color: rgba(153, 153, 153, 0.3);
 }
 
